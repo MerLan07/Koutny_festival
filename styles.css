@@ -1,0 +1,339 @@
+﻿* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+.navbar{
+    background-color: black;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    font-size: 28px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 16px 0 16px 0;
+}
+.nav-link a{
+    text-decoration: none;
+    color: white;
+}
+.nav-link a:hover{
+    color: gray;
+}
+
+header{
+    background: url("images/festival.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.intro-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* tento příkaz posune text o 50% procent své délky */
+    text-align: center;
+    border: 3px solid #00b6b6;
+    border-radius: 16px;
+    padding: 0 50px 0 50px;
+    text-wrap: nowrap; /* při zmenšení text zůstane na jednom řádku */
+}
+.intro-container h1{
+    font-size: 64px;
+}
+.intro-container p{
+    font-size: 28px;
+}
+
+.about-festival, .about-singers{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 48px;
+}
+.about-festival p{
+    font-size: 24px;
+    margin: 0;
+    padding: 32px;
+}
+
+.taylor {
+    background-color: rgb(243, 243, 243);
+    width: 700px;
+    margin: 200px auto 110px auto;
+    padding: 30px 24px;
+    border-radius: 20px;
+    position: relative;
+}
+.taylor img{
+    border-radius: 20px;
+    position: absolute;
+    right: -15%;
+    top: -30%;
+}
+
+.Eminem {
+    background-color: rgb(243, 243, 243);
+    width: 700px;
+    margin: 150px auto;
+    padding: 30px 24px;
+    border-radius: 20px;
+    text-align: right;
+    position: relative;
+}
+.Eminem img{
+    border-radius: 20px;
+    position: absolute;
+    left: -15%;
+    top: -30%;
+}
+
+.testimonials{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.testimonials h2{
+    font-size: 48px;
+    text-align: center;
+}
+.testimonial-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-card{
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px 16px 32px 16px;
+}
+.testimonial-card img{
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 92px;
+}
+.testimonial-card p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.testimonial-card h3{
+    font-size: 24px;
+}
+.testimonial-card h4{
+    font-size: 20px;
+    color: darkgray;
+    margin-bottom: 0;
+}
+
+#contact{
+    width: 50%;
+    margin: auto;
+}
+#contact h2{
+    margin: 40px;
+    text-align: center;
+}
+#contact form{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+input[type="checkbox"]{
+    width: 5%;
+    height: 20%;
+}
+input[type="button"]{
+    width: 100%;
+    padding: 8px;
+    font-size: 22px;
+    margin: 8px 0;
+    background: black;
+    color: white;
+    border: none;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    color: black;
+    background: white;
+    transition: 0.5s;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 8px;
+    margin: 8px 0;
+}
+label{
+    font-size: 22px;
+}
+
+footer {
+    padding: 16px 0 16px 0;
+    background: black;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.social-icons .fa{
+    font-size: 32px;
+}
+.fa-facebook{
+    color: #6f6fff;
+}
+.fa-instagram{
+    color: deeppink;
+}
+.fa-youtube-play{
+    color: red;
+}
+.fa-twitter{
+    color: deepskyblue;
+}
+.social-icons i:hover{
+    color: white;
+}
+
+.footer-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    font-size: 20px;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: gray;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Tickets */
+
+.intro-tickets{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.intro-tickets h1{
+    font-size: 40px;
+    margin: 10px auto 0 auto;
+    border: black solid 2px;
+    width: 10%;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+.intro-tickets h2{
+    font-size: 40px;
+}
+.text-above-tickets{
+    position: relative;
+    left: 18%;
+}
+.tickets{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.ticket{
+    background: white;
+    padding: 16px;
+    height: 501px;
+    width: 402px;
+    margin-bottom: 30px;
+}
+.ticket-name{
+    background: purple;
+    color: white;
+    width: 95%;
+    font-weight: bold;
+    font-size: 50px;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+}
+.ticket h3{
+    font-size: 20px;
+}
+.buy-container button{
+    color: white;
+    background: black;
+    border-radius: 7px;
+    width: 40%;
+    height: 50px;
+}
+
+/* Merch */
+.merch-intro{
+    text-align: center;
+}
+.merch-intro h1{
+    font-size: 40px;
+}
+.merch-intro h2{
+    font-size: 30px;
+    margin: 20px auto 20px auto;
+    border: black solid 2px;
+    width: 15%;
+    background-color: white;
+    color: purple;
+    border-radius: 10px;
+}
+.merch-pictures{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.merch-picture{
+    flex: 1 0 30%;
+    margin: auto;
+}
+.merch-picture img{
+    width: 50%;
+    height: 50%
+}
+.merch-picture h2{
+    font-size: 20px;
+}
+.merch-picture h3{
+    font-size: 20px;
+}
+
+.Mega-tricko:hover{
+    content: url("images/tricko-agraelus2.webp");
+}
+.Mega-mikina:hover{
+    content: url("images/mikina-agraelus2.webp");
+}
+.Mega-kryt:hover{
+    content: url("images/kryt-agraelus-mantis-blades2.webp");
+}
+.Mega-ksiltovka-gold:hover{
+    content: url("images/ksiltovka-agraelus-mosaz2.webp");
+}
+.Mega-ksiltovka-silver:hover{
+    content: url("images/ksiltovka-agraelus2.webp");
+}
+.Mega-socks:hover{
+    content: url("images/ponozky-agraelus2.webp");
+}
+
